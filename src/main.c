@@ -5,12 +5,14 @@
 
 int main(int argc, char *argv[]) {
 
+    // car : 1 seul argument
     if (argc == 3 && strcmp(argv[1], "car") == 0) {
         int a = atoi(argv[2]);
         printf("%d\n", car(a));
         return 0;
     }
 
+    // add / sub / mul / div : 2 arguments
     if (argc == 4) {
         char* op = argv[1];
         char* a = argv[2];
@@ -40,6 +42,7 @@ int main(int argc, char *argv[]) {
 
         return 0;
     }
+
     printf("Erreur de parametres");
     return 1;
 }
